@@ -1,0 +1,132 @@
+/* colors
+thistle2 (light purple)	#EED2EE
+orfu pink	(medium purple) #ECC8EC
+thistle (SVG)	(dark purple) #D8BFD8
+bermuda (purple/peach)	#F6C9CC
+camo1 (pastel green)	#CFDBC5
+lavenderblush (SVG) (light pink)	#FFF0F5
+lavenderblush2	(purple grey) #EEE0E5
+ */
+
+.top-image {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.top-image img {
+  width: 100%;
+  height: auto;
+}
+
+body{
+  font-family: 'Cabin', sans-serif;
+  text-align: center;
+}
+
+p {
+  font-family: 'Roboto Slab', serif;
+}
+
+h1 {
+  font-size: 40px;
+  padding: 20px 0px;
+}
+
+#navigation {
+  width: 100%;
+  background-color: #CFDBC5;
+  /* position: fixed; */
+  padding: 20px 0px;
+  font-size: 24px;
+}
+
+#navigation ul {
+  display: block;
+}
+
+#navigation ul li {
+  display: inline;
+  cursor: pointer;
+}
+
+#their-story-section {
+  background-color: #ECC8EC;
+}
+
+#photos-section {
+  background-color: #EED2EE;
+}
+
+#wedding-details-section {
+  background-color: #ECC8EC;
+  overflow: hidden;
+}
+
+#wedding-details-section h1 {
+  clear: both;
+}
+
+.event-details {
+  text-align: left;
+  float:left;
+  width: 50%;
+  height: 100px;
+}
+
+.google-map {
+  float: left;
+  width: 50%;
+}
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#rsvp-section {
+  background-color: #EED2EE;
+}
+
+#heart {
+    position: relative;
+    width: 100px;
+    height: 90px;
+}
+
+
+#heart:before,
+#heart:after {
+    position: absolute;
+    content: "";
+    left: 50px;
+    top: 0;
+    width: 50px;
+    height: 80px;
+    background: red;
+    -moz-border-radius: 50px 50px 0 0;
+    border-radius: 50px 50px 0 0;
+    -webkit-transform: rotate(-45deg);
+       -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+         -o-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    -webkit-transform-origin: 0 100%;
+       -moz-transform-origin: 0 100%;
+        -ms-transform-origin: 0 100%;
+         -o-transform-origin: 0 100%;
+            transform-origin: 0 100%;
+}
+#heart:after {
+    left: 0;
+    -webkit-transform: rotate(45deg);
+       -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+         -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+    -webkit-transform-origin: 100% 100%;
+       -moz-transform-origin: 100% 100%;
+        -ms-transform-origin: 100% 100%;
+         -o-transform-origin: 100% 100%;
+            transform-origin :100% 100%;
+}
