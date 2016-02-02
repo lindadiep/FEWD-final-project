@@ -6,6 +6,7 @@ bermuda (purple/peach)	#F6C9CC
 camo1 (pastel green)	#CFDBC5
 lavenderblush (SVG) (light pink)	#FFF0F5
 lavenderblush2	(purple grey) #EEE0E5
+dark burgundy #500000
  */
 
 .top-image {
@@ -16,11 +17,13 @@ lavenderblush2	(purple grey) #EEE0E5
 .top-image img {
   width: 100%;
   height: auto;
+  display: block;
 }
 
 body{
   font-family: 'Cabin', sans-serif;
   text-align: center;
+  font-size: 24px;
 }
 
 p {
@@ -30,14 +33,20 @@ p {
 h1 {
   font-size: 40px;
   padding: 20px 0px;
+  margin: 0;
+}
+
+section {
+  padding: 20px;
 }
 
 #navigation {
   width: 100%;
-  background-color: #CFDBC5;
-  /* position: fixed; */
-  padding: 20px 0px;
+  background-color: #D8BFD8;
+  position: fixed;
+  padding: 30px 0px;
   font-size: 24px;
+  box-sizing: border-box;
 }
 
 #navigation ul {
@@ -47,27 +56,35 @@ h1 {
 #navigation ul li {
   display: inline;
   cursor: pointer;
+  padding: 10px;
+}
+
+a {
+  text-decoration: none;
 }
 
 #their-story-section {
-  background-color: #ECC8EC;
-}
-
-#photos-section {
-  background-color: #EED2EE;
-}
-
-#wedding-details-section {
-  background-color: #ECC8EC;
-  overflow: hidden;
-}
-
-#wedding-details-section h1 {
+  background-color: #F6C9CC;
   clear: both;
 }
 
+#photos-section {
+  background-color: #FFF0F5;
+}
+
+#wedding-details-section {
+  background-color: #CFDBC5;
+  float: left;
+  width: 100%;
+  padding: 0;
+}
+/*
+#wedding-details-section h1 {
+  clear: both;
+} */
+
 .event-details {
-  text-align: left;
+  text-align: right;
   float:left;
   width: 50%;
   height: 100px;
@@ -85,7 +102,38 @@ h1 {
 }
 
 #rsvp-section {
+  background-color: #ECC8EC;
+  clear: both;
+}
+
+#rsvp-style {
   background-color: #EED2EE;
+  margin: 20px 50px;
+  border-style: double;
+  border-width: 10px;
+  border-color: #FFF0F5;
+  width: 600px;
+}
+
+form {
+  text-align: left;
+}
+
+label {
+  font-size: 16px;
+}
+
+form p {
+  font-size: 20px;
+  padding: 10px 0;
+}
+
+footer {
+  background-color: #EEE0E5;
+  color: #500000;
+  font-weight: 600;
+  font-size: 20px;
+  padding: 20px;
 }
 
 #heart {
@@ -93,7 +141,6 @@ h1 {
     width: 100px;
     height: 90px;
 }
-
 
 #heart:before,
 #heart:after {

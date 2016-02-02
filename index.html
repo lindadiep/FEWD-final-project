@@ -12,17 +12,19 @@
 
   <body>
 
-    <div class="top-image">
-      <img src="images/jeanandsteve.jpg" alt="Jean and Steve">
+    <div id="navigation">
+      <div>
+        <ul>
+          <li>THEIR STORY</li> |
+          <li>PHOTOS</li> |
+          <li>WEDDING DETAILS</li> |
+          <li><a href="#rsvp">RSVP</a></li>
+        </ul>
+      </div>
     </div>
 
-    <div id="navigation">
-      <ul>
-        <li>THEIR STORY</li> |
-        <li>PHOTOS</li> |
-        <li>WEDDING DETAILS</li> |
-        <li>RSVP</li>
-      </ul>
+    <div class="top-image">
+      <img src="images/jeanandsteve.jpg" alt="Jean and Steve">
     </div>
 
     <section id="their-story-section">
@@ -31,7 +33,6 @@
       <div id="heart">
         <!-- five hearts: 1. when they met 2. when they moved in 3. when they got their cat 4. proposal 5. wedding -->
       </div>
-
 
     </section>
 
@@ -59,50 +60,65 @@
         </div>
 
         <div class="google-map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3098.638532403777!2d-77.10637928464521!3d39.04636027954794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7cc27c6efcb7b%3A0x2960dd3159f78843!2sFar+East+Restaurant!5e0!3m2!1sen!2sus!4v1454219665494" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+            
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12381.947664521655!2d-77.239441!3d39.11815!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2ce736d8aff6f070!2sKentlands+Mansion!5e0!3m2!1sen!2sus!4v1454221032614" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3098.638532403777!2d-77.10637928464521!3d39.04636027954794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7cc27c6efcb7b%3A0x2960dd3159f78843!2sFar+East+Restaurant!5e0!3m2!1sen!2sus!4v1454219665494" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+
         </div>
     </section>
 
-    <section id="rsvp-section">
+    <section id="rsvp-section"><a name="rsvp"></a>
       <h1>RSVP</h1>
-      <p>Let us know if you're coming--Hope you can make it!</p>
+      <div id="rsvp-style">
+        <p>Let us know if you're coming!</p>
 
-      <form>
-        <div>
-          <label for="name">Your contact information</label><br />
-              <input type="text" name="name[first]" placeholder="First"><br />
-              <input type="text" name="name[last]" placeholder="Last"><br />
-              <input type="email" name="email" placeholder="Email"><br />
-
-        </div>
-
-        <div>
-          <label for"rsvp">Your RSVP</label><br />
-              <input type="radio" name="rsvp" value="yes" checked> Wouldn't miss it!<br />
-              <input type="radio" name="rsvp" value="no"> Regretfully decline<br />
+        <form>
+          <p>Your contact information</p>
+          <div>
+            <label for="name">Name:</label>
+            <input type="text" name="name[first]" placeholder="First">
+            <input type="text" name="name[last]" placeholder="Last"><br />
+            <label for="email">Email:</label>
+            <input type="email" name="email" placeholder="Email">
           </div>
 
-        <div>
-          <input type="checkbox" name="plus1" value="plus1-guest">
-          <label for="plus1">Check if you're bringing a guest!</label><br />
+          <div>
+            <p>Your RSVP</p>
 
-          <label for="plus1-name">Your guest's name</label><br />
-          <input type="text" name="plus1-name[first]" placeholder="Guest first name">
-          <input type="text" name="plus1-name[last]" placeholder="Guest last name">
+            <input type="radio" name="rsvp" value="yes" checked>
+            <label for"rsvp">Wouldn't miss it!</label>
 
-        </div>
+            <input type="radio" name="rsvp" value="no">
+            <label for"rsvp">Regretfully decline</label>
+          </div>
 
-        <div>
-          <label for="message">Send a message to the happy couple!</labe><br />
-          <textarea id="myTextArea"rows="5" cols="50" wrap="physical" placeholder="Message"></textarea>
-        </div>
+          <div>
+            <input type="checkbox" name="plus1" value="plus1-guest">
+            <label for="plus1">Check if you're bringing a guest!</label><br />
 
+            <label for="plus1-name">Your guest's name</label><br />
+            <input type="text" name="plus1-name[first]" placeholder="First">
+            <input type="text" name="plus1-name[last]" placeholder="Last">
+          </div>
+
+          <div>
+            <p>Send a message to the happy couple!</p>
+            <textarea id="myTextArea"rows="5" cols="50" wrap="physical" placeholder="Message"></textarea>
+          </div>
         </form>
 
+        <button type="submit" class="btn btn-default" form="nameform" value="Submit">Submit</button>
+
+      </div>
     </section>
 
+    <footer>
+      <p>Email us with any questions! Hope you can make it to our big day!</p>
+    </footer>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="js/index.js"></script>
   </body>
 
