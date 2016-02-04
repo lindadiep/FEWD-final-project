@@ -4,21 +4,24 @@ orfu pink	(medium purple) #ECC8EC
 thistle (SVG)	(dark purple) #D8BFD8
 bermuda (purple/peach)	#F6C9CC
 camo1 (pastel green)	#CFDBC5
-lavenderblush (SVG) (light pink)	#FFF0F5
+lavenderblush (SVG) (light pink)	#FFF0F5 
 lavenderblush2	(purple grey) #EEE0E5
 dark burgundy #500000
  */
 
-.top-image {
+.top-section {
   width: 100%;
   margin: 0 auto;
-}
-
-.top-image img {
-  width: 100%;
   height: auto;
   display: block;
 }
+
+/*.top-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+} 
+*/
 
 body{
   font-family: 'Cabin', sans-serif;
@@ -61,6 +64,26 @@ section {
 
 a {
   text-decoration: none;
+}
+
+/* unvisited link */
+navigation a:link {
+    color: #EEE0E5;
+}
+
+/* visited link */
+navigation a:visited {
+    color: #EEE0E5;
+}
+
+/* mouse over link */
+navigation a:hover {
+    color: #EEE0E5;
+}
+
+/* selected link */
+navigation a:active {
+    color: #EEE0E5;
 }
 
 #their-story-section {
