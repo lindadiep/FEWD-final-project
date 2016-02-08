@@ -12,9 +12,13 @@
 
   <body>
 
+    <!-- Since this block is your navigation, it is more semantically correct to use the <nav> tag -->
     <div id="navigation">
       <div>
         <ul>
+          <!-- Watch the order in which you close your tags.  If you open the <li> tag and then open the <a>
+               tag, you should first close the <a> tag, then close the <li> tag. 
+          -->
           <li><a href="#theirStory">THEIR STORY</li></a> |
           <li><a href="#photos">PHOTOS</a></li> |
           <li><a href="#eventDetails">WEDDING DETAILS</a></li> |
@@ -24,11 +28,16 @@
     </div>
 
     <div class="top-section">
+      <!-- This is not something we went over in class, but it is better form to type ampersands
+           in your HTML content as "&amp;", which is the code for an ampersand.  This is because
+           ampersands are used in code, so using the code for the ampersand is less confusing to browsers
+      -->
       <h1>Jean & Steve</h1>
       <p>WE'RE GETTING MARRIED!<br />
       9 - 10 - 2016</p>
     </div>
 
+    <!-- Great use of sections to organize your content! -->
     <section id="their-story-section">
       <a name="theirStory"><h2>THEIR STORY</h2></a>
       <p>Amazing love story timeline powered by javascript goes here!!</p>
@@ -75,8 +84,11 @@
       <div id="rsvp-style">
         <p>Let us know if you're coming!</p>
 
-        <form>
+        <form> <!-- Make sure you close your <form> tag - I do not see a close tag at the end of the form. -->
           <p>Your contact information</p>
+          <!-- Instead of <div> tags here, you can also use the <fieldset> tag to group your
+               sets of form fields
+          -->
           <div>
             <label for="name">Name:</label>
             <input type="text" name="name[first]" placeholder="First">
